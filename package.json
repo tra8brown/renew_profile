@@ -1,0 +1,29 @@
+{
+    "name": "renew_profile",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "inquirer": "^8.1.1"
+    },
+    "devDependencies": {
+        "jest": "^27.0.6"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tra8brown/renew_profile.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tra8brown/renew_profile/issues"
+    },
+    "homepage": "https://github.com/tra8brown/renew_profile#readme"
+}
