@@ -44,9 +44,9 @@ module.exports = generateHTML = (data) => {
                     <div class="card bg-info mx-auto mb-3" style="width: 18rem">
                         <h5 class="card-header">${data.internName}<br /><br />Intern</h5>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID: 465456</li>
-                            <li class="list-group-item">Email Address: Jayden@aol.com</li>
-                            <li class="list-group-item">School: University of Utah</li>
+                            <li class="list-group-item">ID: ${data.internId}</li>
+                            <li class="list-group-item">Email Address: ${data.internEmail}</li>
+                            <li class="list-group-item">School: ${data.internSchool}</li>
                         </ul>
                     </div>
                 </div>
@@ -54,9 +54,9 @@ module.exports = generateHTML = (data) => {
                     <div class="card bg-info mx-auto mb-3" style="width: 18rem">
                         <h5 class="card-header">${data.employeeName}<br /><br />Employee</h5>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID: 123456</li>
-                            <li class="list-group-item">Email Address: rrr@hotmail.com</li>
-                            <li class="list-group-item">School: FLC</li>
+                            <li class="list-group-item">ID: ${data.employeeId}<</li>
+                            <li class="list-group-item">Email Address: ${data.employeeEmail}</li>
+                            <li class="list-group-item">School: ${data.employeeSchool}</li>
                         </ul>
                     </div>
                 </div>
