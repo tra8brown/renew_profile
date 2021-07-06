@@ -1,4 +1,12 @@
-# renew_profile
+# Team Profile Generator
+## This application generates work team profiles
+* I created a video of the typical user flow of that application.
+* I basically got everything to work but had trouble with the menu option in the questions array. Any future implementations would be to get that menu option to work. 
+
+__walkthrough video__
+![walkthrough video](./gif.gif)
+https://drive.google.com/file/d/1Gqk53atkme7gMgRhzWsgIIxW9zuKNLbv/view
+
 <h1 align="center">Hi 👋, I'm Tracee</h1>
 <h3 align="center">A full-stack developer from Utah.</h3>
 
