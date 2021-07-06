@@ -25,8 +25,12 @@ module.exports = generateHTML = (data) => {
                         <h5 class="card-header">${data.managerName}<br /><br />Manager</h5>
                         <ul class="list-group list-group-flush bg-light">
                             <li class="list-group-item">ID: ${data.managerId}</li>
-                            <li class="list-group-item">Email Address: ${data.managerEmail}</li>
-                            <li class="list-group-item">Office Phone: ${data.managerPhone}</li>
+                            <li class="list-group-item">Email Address:
+                                <a href="mailto: ${data.managerEmail}">
+                                    ${data.managerEmail}
+                                </a>
+                            </li>
+                            <li class="list-group-item">Office Phone: ${data.managerPhone}</>
                         </ul>
                     </div>
                 </div>
@@ -36,7 +40,9 @@ module.exports = generateHTML = (data) => {
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">${data.engineerId}</li>
                             <li class="list-group-item">Email Address: ${data.engineerEmail}</li>
-                            <li class="list-group-item">GitHub: ${data.engineerGithub}</li>
+                            <li class="list-group-item">GitHub: 
+                                <a href="http://www.github.com/${data.engineerGithub}">${data.engineerGithub}</a>                            
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -45,18 +51,15 @@ module.exports = generateHTML = (data) => {
                         <h5 class="card-header">${data.internName}<br /><br />Intern</h5>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${data.internId}</li>
-                            <li class="list-group-item">Email Address: ${data.internEmail}</li>
+                            <li class="list-group-item">Email Address:
+                            <a href="mailto: ${data.internEmail}">
+                                ${data.internEmail}
+                            </a>
+                        </li>
                             <li class="list-group-item">School: ${data.internSchool}</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card bg-info mx-auto mb-3" style="width: 18rem">
-                        <h5 class="card-header">${data.employeeName}<br /><br />Employee</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID: ${data.employeeId}<</li>
-                            <li class="list-group-item">Email Address: ${data.employeeEmail}</li>
-                            <li class="list-group-item">School: ${data.employeeSchool}</li>
                         </ul>
                     </div>
                 </div>

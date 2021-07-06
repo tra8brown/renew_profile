@@ -15,7 +15,7 @@ const questions = [{ //name of project
             return true;
         }
     },
-    { //team manager id
+    { //TEAM MANAGER id
         type: 'input',
         name: 'managerId',
         message: 'What is the team managers Id?',
@@ -47,10 +47,52 @@ const questions = [{ //name of project
             }
             return true;
         },
-    }
-];
-//engineer name
-const questions = [{
+    },
+    { //INTERN
+        type: 'input',
+        name: 'internName',
+        message: 'What is the intern name?',
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("you must enter the name of the intern.");
+            }
+            return true;
+        }
+    },
+    { //intern id
+        type: 'input',
+        name: 'internId',
+        message: 'What is the interns Id?',
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("You must enter intern Id.");
+            }
+            return true;
+        },
+    },
+    { //intern email
+        type: 'input',
+        name: 'internEmail',
+        message: 'What is the interns email?',
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("You must enter interns email.");
+            }
+            return true;
+        },
+    },
+    { //intern school
+        type: 'input',
+        name: 'internSchool',
+        message: 'What is the interns school.',
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("You must enter team manager's phone.");
+            }
+            return true;
+        },
+    },
+    { //ENGINEER name
         type: 'input',
         name: 'engineerName',
         message: 'What is the team engineers name?',
@@ -95,102 +137,8 @@ const questions = [{
         },
     }
 ];
-//intern name
-const questions = [{ //name of project 
-        type: 'input',
-        name: 'internName',
-        message: 'What is the intern name?',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("you must enter the name of the intern.");
-            }
-            return true;
-        }
-    },
-    { //intern id
-        type: 'input',
-        name: 'internId',
-        message: 'What is the interns Id?',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("You must enter intern Id.");
-            }
-            return true;
-        },
-    },
-    { //intern email
-        type: 'input',
-        name: 'internEmail',
-        message: 'What is the interns email?',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("You must enter interns email.");
-            }
-            return true;
-        },
-    },
-    { //intern school
-        type: 'input',
-        name: 'internSchool',
-        message: 'What is the interns school.',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("You must enter team manager's phone.");
-            }
-            return true;
-        },
-    }
-];
 
-//employee name, id, email, school
-const questions = [{ //name of project 
-        type: 'input',
-        name: 'employeeName',
-        message: 'What is the employee name?',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("you must enter the name of the employee.");
-            }
-            return true;
-        }
-    },
-    { //Description of title for the section
-        type: 'input',
-        name: 'employeeId',
-        message: 'What is the employee Id?',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("You must enter employee Id.");
-            }
-            return true;
-        },
-    },
-    { //Description of title for the section
-        type: 'input',
-        name: 'school',
-        message: 'What is the managers email?',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("You must enter a manager's email.");
-            }
-            return true;
-        },
-    },
-    { //Description of title for the section
-        type: 'input',
-        name: 'managerPhone',
-        message: 'What is the managers phone.',
-        validate: function(answer) {
-            if (answer.length < 1) {
-                return console.log("You must enter team manager's phone.");
-            }
-            return true;
-        },
-    }
-];
 
-// Where the app starts running
-// Where we start calling function
 inquirer.prompt(questions).then(function(data) {
     const filename =
         `generated.index.html`;
