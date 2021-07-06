@@ -7,6 +7,11 @@ __walkthrough video__
 ![walkthrough video](./src/yeah.gif)
 https://drive.google.com/file/d/1pbBJgaVomXS3mJUJxDd-S6aRm5darEc_/preview
 
+__running tests__
+![test run](./src/testRun.gif)
+https://drive.google.com/file/d/1tHaNc7lu8cZwy5C89U_GgV6HrTgWt6fs/preview
+
+
 <h1 align="center">Hi 👋, I'm Tracee</h1>
 <h3 align="center">A full-stack developer from Utah.</h3>
 
