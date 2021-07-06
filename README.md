@@ -4,8 +4,8 @@
 * I basically got everything to work but had trouble with the menu option in the questions array. Any future implementations would be to get that menu option to work. 
 
 __walkthrough video__
-![walkthrough video](./gif.gif)
-https://drive.google.com/file/d/1Gqk53atkme7gMgRhzWsgIIxW9zuKNLbv/view
+![walkthrough video](./src/yeah.gif)
+<iframe src="https://drive.google.com/file/d/1pbBJgaVomXS3mJUJxDd-S6aRm5darEc_/preview" width="640" height="480"></iframe>
 
 <h1 align="center">Hi 👋, I'm Tracee</h1>
 <h3 align="center">A full-stack developer from Utah.</h3>
